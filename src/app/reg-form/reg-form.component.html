@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Register</h1>
+    <form #regForm="ngForm" (ngSubmit)="submitdata(regForm)">
+        <label>Name</label>
+<input type="text" name="fname" class="form-control" ngModel #fname="ngModel">
+<div>
+    <ng-container *ngFor="let g of genderArr">
+        <input type="radio" [value]="g" name="gen" ngModel #gen="ngModel">
+        {{g}}
+
+    </ng-container>
+</div>
+<div>
+    <ng-container *ngFor="let h of hobbyArr">
+        <input type="checkbox" [value]="h" name="hobby" ngModel #hobby="ngModel" (change)="changeSelect($event)">
+    {{h}}
+    </ng-container>
+</div>
+<input type="submit" value="Add data">
+    </form>
+
+</div>
+

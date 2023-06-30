@@ -1,0 +1,22 @@
+{
+  "item": [
+    {
+      "item_name": "Pen",
+      "company": "Raynolds",
+      "price": "Rs.12",
+      "id": 1
+    },
+    {
+      "item_name": "Laptop",
+      "company": "HP",
+      "price": "50000",
+      "id": 3
+    },
+    {
+      "item_name": "tab",
+      "company": "samsung",
+      "price": "15000",
+      "id": 4
+    }
+  ]
+}

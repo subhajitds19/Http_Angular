@@ -1,0 +1,32 @@
+<div class="container">
+    <form [formGroup]="formValue" (ngSubmit)="submitData()">
+        <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">first_name</label>
+            <input type="text" class="form-control" formControlName="first_name" 
+                aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">last_name</label>
+            <input type="text" class="form-control" formControlName="last_name" 
+                aria-describedby="emailHelp" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="exampleInputContact1" class="form-label">email</label>
+            <input type="text" class="form-control" formControlName="email" 
+                aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">password</label>
+            <input type="text" class="form-control" formControlName="password" 
+                aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+            <input type="file" class="form-control-file" id="pro_pic" (change)="onFileSelection($event)">
+        </div>
+       
+        
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

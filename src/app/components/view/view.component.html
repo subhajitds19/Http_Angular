@@ -1,0 +1,28 @@
+<p>view works!</p>
+<!-- npm i --save-dev json-server -->
+
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Company</th>
+            <th>Action</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of alldata">
+            <th scope="row">{{d.id}}</th>
+            <td>{{d.item_name}}</td>
+            <td> {{d.price}}</td>
+            <td>{{d.company}}</td>
+            <td><button (click)="deleteData(d.id)">Delete</button></td>
+            <th><button type="button" routerLink="/edit/{{d.id}}">Edit</button></th>
+          </tr>
+         
+        </tbody>
+      </table>
+</div>
