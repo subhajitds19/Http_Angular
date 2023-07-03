@@ -23,7 +23,7 @@ profile_api ='https://wtsacademy.dedicateddevelopers.us/api/user/profile-details
 
     user_Profile():Observable<RegData[]>{
       return this.http.get<RegData[]>(this.profile_api, {
-        headers:new HttpHeaders({"x-access-token": `${this.auth.getToken()}`
+        headers:new HttpHeaders({'x-access-token': `${this.auth.getToken()}`
             
        })
     });

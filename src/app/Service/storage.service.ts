@@ -9,7 +9,7 @@ export class StorageService {
     window.localStorage.setItem('f_name', fname);
     window.localStorage.setItem('l_name', lname);
     window.localStorage.setItem('email', mail);
-    window.localStorage.setItem('token', token);
+    window.sessionStorage.setItem('token', token);
     
   }
 
